@@ -28,7 +28,7 @@ Copy `.env.example` to `.env.local` for local use. On the host, set the same nam
 ## Local run
 ```
 npm install
-mysql -u USER -p DB_NAME < db/schema.sql
+mysql -u USER -p DB_NAME < db/schema.sql (optional: the app also creates the tables itself on first start)
 npm run dev
 ```
 Open http://localhost:3000 and check http://localhost:3000/api/health (shows which settings are present).
